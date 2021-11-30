@@ -88,7 +88,15 @@ function printEveyOtherNumber() {
 // Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
 // For example, if the initial array is ["a", "b", "c", "d", "e"], then the returned array should be ["a", "awesomesauce", "b", "awesomesauce", "c", "awesomesauce", "d", "awesomesauce", "e"].
 
-
+function awesomesauce(strings) {
+  var finalArray = [];
+  strings.forEach(function (string) {
+    finalArray.push(string);
+    finalArray.push("awesomesauce");
+  });
+  finalArray.pop();
+  return finalArray;
+}
 // console.log(awesomesauce(["a", "b", "c", "d", "e"]));
 
 // Start with the hash: item_amounts = {chair: 5, table: 2}
