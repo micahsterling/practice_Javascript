@@ -72,7 +72,17 @@ function printEveyOtherNumber() {
 // printEveyOtherNumber();
 
 // Write a method that accepts an array of numbers as a parameter, and counts how many 55’s there are in the array.
-
+// function countOf55(array) {
+//   var count = 0;
+//   var i = 0;
+//   array.forEach(function (number)) {
+//     if (numbers[i] === 55) {
+//       console.log(count);
+//       count += 1;
+//     }
+//     i += 1
+//   }
+// }
 // counsole.log(countOf55([55, 55, 55, 22, 33, 44,]))
 
 // Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
