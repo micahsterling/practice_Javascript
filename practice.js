@@ -30,7 +30,13 @@ function printEveryOtherItem (array) {
 
 
 // // Write a method that accepts an array of numbers and returns the sum.
-
+function computeSum (array) {
+  let sum = 0;
+  array.forEach(function (num) {
+    sum += num;
+  });
+  return sum;
+}
 
 // console.log(computeSum([2, 4, 5]));
 
