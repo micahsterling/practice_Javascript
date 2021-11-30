@@ -1,17 +1,18 @@
 // // Write a method that prints out the numbers 1 to 1000 that are divisible by 3.
-// function printNumbersDivisibleByThree() {
-//   var index = 1;
-//   while (index <= 1000) {
-//     if (index % 3 === 0) {
-//       console.log(index);
-//     }
-//     index += 1;
-//   }
-// }
-// printNumbersDivisibleByThree();
+function printNumbersDivisibleByThree(num) {
+  let i = 0;
+  while (i <= num) {
+    if (i % 3 === 0) {
+      console.log(i);
+    }
+    i ++;
+  }
+}
+// printNumbersDivisibleByThree(1000);
 
 
 // // Write a method that accepts an array of strings and prints out every other string.
+
 // function printEveryOtherItem(strings) {
 //   var index = 0;
 //   strings.forEach(function (string) {
@@ -25,13 +26,8 @@
 
 
 // // Write a method that accepts an array of numbers and returns the sum.
-// function computeSum(numbers) {
-//   var sum = 0;
-//   numbers.forEach(function (number) {
-//     sum += number;
-//   });
-//   return sum;
-// }
+
+
 // console.log(computeSum([2, 4, 5]));
 
 // // Start with the hash: city_populations = {chi: 2700000}
@@ -45,55 +41,24 @@
 
 
 // Write a method that prints out every number from 1 to 100. 
-function printNumbers() {
-  var index = 1;
-  while (index <= 100) {
-    {
-      console.log(index);
-    }
-    index += 1;
-  }
-}
-// printNumbers();
+
+printNumbers(100);
 
 
 // Write a method that prints out every other number from 1 to 100. (That is, 1, 3, 5, 7 … 99).
-function printEveyOtherNumber() {
-  var number = 1;
-  while (number <= 100) {
-    console.log(number);
-    number += 2;
-  }
-}
+
 // printEveyOtherNumber();
 
 // Write a method that accepts an array of numbers as a parameter, and counts how many 55’s there are in the array.
-function countOf55(array) {
-  var count = 0;
-  var i = 0;
-  array.forEAch(function (number)) {
-    if (numbers[i] === 55) {
-      console.log(count);
-      count += 1;
-    }
-    i += 1
-  }
-}
+
 // counsole.log(countOf55([55, 55, 55, 22, 33, 44,]))
 
 // Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
 // For example, if the initial array is ["a", "b", "c", "d", "e"], then the returned array should be ["a", "awesomesauce", "b", "awesomesauce", "c", "awesomesauce", "d", "awesomesauce", "e"].
 
-function awesomesauce(strings) {
-  var finalArray = []
-  strings.forEach(function (string) {
-    finalArray.push string;
-    finalArray.push("awesomesauce");
-  })
-  finalArray.pop();
-  return finalArray();
-}
-console.log(awesomesauce(["a", "b", "c", "d", "e"]))
+
+// console.log(awesomesauce(["a", "b", "c", "d", "e"]));
+
 // Start with the hash: item_amounts = {chair: 5, table: 2}
 // Someone just bought two chairs. Change the hash such that the chair amount is 3.
 // The final result should be: {chair: 3, table: 2}
@@ -109,14 +74,14 @@ console.log(awesomesauce(["a", "b", "c", "d", "e"]))
 // Write a method that accepts a number and returns its factorial.
 // For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
 
-function factorial(number) {
-  var product = 1;
-  while (number > 0) {
-    product *= number;
-    number--;
-  }
-  return products
-}
+// function factorial(number) {
+//   var product = 1;
+//   while (number > 0) {
+//     product *= number;
+//     number--;
+//   }
+//   return products
+// }
 // console.log(factorial(5))
 
 // Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array. 
