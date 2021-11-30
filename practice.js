@@ -62,7 +62,13 @@ printNumbers(100);
 
 
 // Write a method that prints out every other number from 1 to 100. (That is, 1, 3, 5, 7 … 99).
-
+function printEveyOtherNumber() {
+  var number = 1;
+  while (number <= 100) {
+    console.log(number);
+    number += 2;
+  }
+}
 // printEveyOtherNumber();
 
 // Write a method that accepts an array of numbers as a parameter, and counts how many 55’s there are in the array.
