@@ -12,7 +12,11 @@ function printNumbersDivisibleByThree(num) {
 
 
 // // Write a method that accepts an array of strings and prints out every other string.
-
+function printEveryOtherItem (array) {
+  for (let i = 0; i < array.length; i += 2) {
+    console.log(array[i]);
+  }
+}
 // function printEveryOtherItem(strings) {
 //   var index = 0;
 //   strings.forEach(function (string) {
