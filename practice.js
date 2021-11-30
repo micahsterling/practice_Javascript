@@ -58,7 +58,7 @@ function printNumbers (num) {
     i++;
   }
 }
-printNumbers(100);
+// printNumbers(100);
 
 
 // Write a method that prints out every other number from 1 to 100. (That is, 1, 3, 5, 7 … 99).
@@ -72,6 +72,15 @@ function printEveyOtherNumber() {
 // printEveyOtherNumber();
 
 // Write a method that accepts an array of numbers as a parameter, and counts how many 55’s there are in the array.
+function countOf55(array) {
+  let count = 0;
+  for (let i = 0; i < array.length;i++) {
+    if (array[i] === 55) {
+      count += 1;
+    }
+  }
+  return count;
+}
 // function countOf55(array) {
 //   var count = 0;
 //   var i = 0;
@@ -83,7 +92,7 @@ function printEveyOtherNumber() {
 //     i += 1
 //   }
 // }
-// counsole.log(countOf55([55, 55, 55, 22, 33, 44,]))
+console.log(countOf55([55, 55, 55, 22, 33, 44,]));
 
 // Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
 // For example, if the initial array is ["a", "b", "c", "d", "e"], then the returned array should be ["a", "awesomesauce", "b", "awesomesauce", "c", "awesomesauce", "d", "awesomesauce", "e"].
