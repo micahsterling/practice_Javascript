@@ -51,7 +51,13 @@ function computeSum (array) {
 
 
 // Write a method that prints out every number from 1 to 100. 
-
+function printNumbers (num) {
+  let i = 0;
+  while (i <= num) {
+    console.log(i);
+    i++;
+  }
+}
 printNumbers(100);
 
 
