@@ -124,13 +124,17 @@ function awesomesauce (array) {
 
 var itemAmounts = { chair: 5, table: 2 };
 itemAmounts["chair"] = 3;
-console.log(itemAmounts);
+
+// console.log(itemAmounts);
 
 // Start with the hash: item_amounts = {chair: 5, table: 2}
 // You received 7 desks to sell. Change the hash to include desks.
 // The final result should be: {chair: 5, table: 2, desk: 7}
 
+itemAmounts = {chair: 5, table: 2};
+itemAmounts["desk"] = 7;
 
+console.log(itemAmounts);
 
 // Write a method that accepts a number and returns its factorial.
 // For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
