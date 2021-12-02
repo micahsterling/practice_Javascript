@@ -43,9 +43,10 @@ function computeSum (array) {
 // // Start with the hash: city_populations = {chi: 2700000}
 // // Add populations to the city_populations hash for New York City (8.4 million) and San Francisco (800,000).
 // // The result should be: {chi: 2700000, nyc: 8400000, sf: 800000}
-// var cityPopulations = { chi: 2700000 };
-// cityPopulations["nyc"] = 8400000;
-// cityPopulations.sf = 800000;  // same as cityPopulations["sf"]
+let cityPopulations =  {chi: 2700000};
+cityPopulations["NYC"] = 8400000;
+cityPopulations["San Francisco"] = 800000 ;
+
 // console.log(cityPopulations);
 
 
@@ -92,27 +93,38 @@ function countOf55(array) {
 //     i += 1
 //   }
 // }
-console.log(countOf55([55, 55, 55, 22, 33, 44,]));
+// console.log(countOf55([55, 55, 55, 22, 33, 44,]));
 
 // Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
 // For example, if the initial array is ["a", "b", "c", "d", "e"], then the returned array should be ["a", "awesomesauce", "b", "awesomesauce", "c", "awesomesauce", "d", "awesomesauce", "e"].
 
-function awesomesauce(strings) {
-  var finalArray = [];
-  strings.forEach(function (string) {
+function awesomesauce (array) {
+  let finalArray = [];
+  array.forEach(function (string) {
     finalArray.push(string);
     finalArray.push("awesomesauce");
   });
-  finalArray.pop();
   return finalArray;
 }
+
+// function awesomesauce(strings) {
+//   var finalArray = [];
+//   strings.forEach(function (string) {
+//     finalArray.push(string);
+//     finalArray.push("awesomesauce");
+//   });
+//   finalArray.pop();
+//   return finalArray;
+// }
 // console.log(awesomesauce(["a", "b", "c", "d", "e"]));
 
 // Start with the hash: item_amounts = {chair: 5, table: 2}
 // Someone just bought two chairs. Change the hash such that the chair amount is 3.
 // The final result should be: {chair: 3, table: 2}
 
-// var itemAmounts = { chair: 5, table: 2 }
+var itemAmounts = { chair: 5, table: 2 };
+itemAmounts["chair"] = 3;
+console.log(itemAmounts);
 
 // Start with the hash: item_amounts = {chair: 5, table: 2}
 // You received 7 desks to sell. Change the hash to include desks.
